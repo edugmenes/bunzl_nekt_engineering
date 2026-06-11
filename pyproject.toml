@@ -8,7 +8,9 @@ dependencies = [
     "delta-spark==3.3.0",
     "jupyter>=1.1.1",
     "nekt-sdk",
+    "pandas>=2.0.0",
     "pyspark==3.5.5",
+    "python-dotenv>=1.0.0",
 ]
 
 [tool.uv.sources]
