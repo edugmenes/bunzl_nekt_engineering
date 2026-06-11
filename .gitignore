@@ -1,4 +1,22 @@
+# credentials
 .env
+
+# python environment
 .venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# spark
 .spark-warehouse/
 .src/spark-warehouse/
+spark-warehouse/
+
+# jupyter
+.ipynb_checkpoints/
+
+# claude code
+.claude/settings.local.json
+
+# uv
+.python-version
