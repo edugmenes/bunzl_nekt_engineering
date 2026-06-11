@@ -114,7 +114,7 @@ df_silver_pipedrive_data = (
         # organization - identifiers
         F.col("d.org_id")                    .cast("integer").alias("org_id"),
         F.col("o.name")                      .cast("string") .alias("org_name"),
-        F.col("o.custom_fields").getField("e1897931095ea6e1bba9b0ebdecfb6ad7587ec27").cast("string").alias("org_cnpj"),
+        F.col("o.custom_fields").getField("e1897931095ea6e1bba9b0ebdecfb6ad7587ec27").cast("long").cast("string").alias("org_cnpj"),
         # organization - address
         F.col("o.address.value")             .cast("string") .alias("org_address"),
         F.col("o.address.route")             .cast("string") .alias("org_address_route"),
